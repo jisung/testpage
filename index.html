@@ -3,15 +3,16 @@
 </head>
 <body>
 <iframe name="ifr1" width='100%' height='200px'></iframe>
-<script>
-    function startupToss() {
-        window.ifr1.location.replace('supertoss://none')
-    }
-</script>
 <a href="supertoss://none" target="ifr1">토스시동걸기 ifr</a><br>
 <a href="supertoss://none">토스시동걸기</a><br>
 <button onclick="startupToss()">토스시동걸기</button><br>
 <a href="intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end" target="ifr1">Intent ifr</a>
 <a href="intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end">Intent</a>
 </body>
+<script>
+    function startupToss() {
+        window.location.replace('supertoss://none')
+    }
+    startupToss();
+</script>
 </html>
