@@ -8,11 +8,12 @@
 <button onclick="startupToss()">토스시동걸기</button><br>
 <a href="intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end" target="ifr1">Intent ifr</a>
 <a href="intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end">Intent</a>
-</body>
 <script>
     function startupToss() {
-        window.location.replace('supertoss://none')
+        window.location.replace('supertoss://none');
+        window.location.replace('https://toss.im');
     }
-    startupToss();
 </script>
+<button onclick="startupToss()">최종선택</button>
+</body>
 </html>
