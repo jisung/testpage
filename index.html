@@ -10,10 +10,16 @@
 <a href="intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end">Intent</a>
 <script>
     function startupToss() {
-        window.location.replace('https://toss.im');
         window.location.replace('supertoss://none');
     }
+    function startupPg() {
+        window.location.replace('https://toss.im');
+    }
+    function startup() {
+        startupToss();
+        setTimeout(startupPg, 1);
+    }
 </script>
-<button onclick="startupToss()">최종선택</button>
+<button onclick="startup()">최종선택</button>
 </body>
 </html>
