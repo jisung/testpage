@@ -7,7 +7,7 @@
 <script>
 
 var openApp = function() {
-  window.ifr1.location.replace('intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end');
+  //window.ifr1.location.replace('intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end');
   //window.ifr1.location.replace('https://ul.toss.im');
 };
 
@@ -20,7 +20,8 @@ triggerAppOpen();
 
 </head>
 <body>
-<a href="https://ul.toss.im">ul.toss.im</a>
+<a href="https://ul.toss.im" target='ifr1'>app link</a>
+<a href="intent://none/#Intent;scheme=supertoss;package=viva.republica.toss;end" target='ifr1'>intent</a>
 </body>
 
 </html>
