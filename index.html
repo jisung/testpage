@@ -4,7 +4,10 @@
 <body>
 <iframe name="ifr1" width='100%' height='200px'></iframe>
 <script>
-    window.ifr1.location.replace('supertoss://none')
+    function startupToss() {
+        window.ifr1.location.replace('supertoss://none')
+    }
 </script>
+<button onclick="startupToss()">토스시동걸기</button>
 </body>
 </html>
