@@ -13,11 +13,11 @@
         window.location.replace('supertoss://none');
     }
     function startupPg() {
-        window.location.replace('https://toss.im');
+        window.location.href = 'https://toss.im'
     }
     function startup() {
         startupToss();
-        setTimeout(startupPg, 200);
+        setTimeout(startupPg, 1000);
     }
 </script>
 <button onclick="startup()">최종선택</button>
